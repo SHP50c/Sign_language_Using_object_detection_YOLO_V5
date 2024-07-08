@@ -1,0 +1,19 @@
+[ 2024-07-08 13:27:26,789 ] 22 root - INFO - Entered the start_data_ingestion method of TrainPipeline class
+[ 2024-07-08 13:27:26,790 ] 23 root - INFO - Getting the data from URL
+[ 2024-07-08 13:27:26,790 ] 18 root - INFO - Initialising DataIngestionConfig class from config_entity.py
+[ 2024-07-08 13:27:26,792 ] 71 root - INFO - Entered initiate_data_ingestion method of Data_Ingestion class
+[ 2024-07-08 13:27:26,792 ] 31 root - INFO - Entered fn: download_data of class DataIngestion
+[ 2024-07-08 13:27:26,794 ] 40 root - INFO - Downloading data from https://drive.google.com/file/d/1dpyiJNgiC3PYOSmh9sFx4V-RUurGQeqc/view?usp=sharing into file artifacts\07_08_2024_13_27_26\data_ingestion\1dpyiJNgiC3PYOSmh9sFx4V-RUurGQeqc.zip
+[ 2024-07-08 13:28:00,255 ] 42 root - INFO - Downloaded data from https://drive.google.com/file/d/1dpyiJNgiC3PYOSmh9sFx4V-RUurGQeqc/view?usp=sharing into filr artifacts\07_08_2024_13_27_26\data_ingestion\1dpyiJNgiC3PYOSmh9sFx4V-RUurGQeqc.zip
+[ 2024-07-08 13:28:00,256 ] 56 root - INFO - Extracting zip file: artifacts\07_08_2024_13_27_26\data_ingestion\1dpyiJNgiC3PYOSmh9sFx4V-RUurGQeqc.zip into dir: artifacts\07_08_2024_13_27_26\data_ingestion\feature_store
+[ 2024-07-08 13:29:03,862 ] 81 root - INFO - Exited initiate_data_ingestion method of Data_Ingestion class
+[ 2024-07-08 13:29:03,863 ] 82 root - INFO - Data ingestion artifact: DataIngestionArtifact(data_zip_file_path='artifacts\\07_08_2024_13_27_26\\data_ingestion\\1dpyiJNgiC3PYOSmh9sFx4V-RUurGQeqc.zip', feature_store_path='artifacts\\07_08_2024_13_27_26\\data_ingestion\\feature_store')
+[ 2024-07-08 13:29:03,863 ] 30 root - INFO - Got the data from URL
+[ 2024-07-08 13:29:03,863 ] 31 root - INFO - Exited the start_data_ingestion method of TrainPipeline class
+[ 2024-07-08 13:29:03,863 ] 43 root - INFO - Entered the fn:start_data_validation of TrainPipeline class
+[ 2024-07-08 13:29:03,863 ] 55 root - INFO - Entered fn:initiate_data_validation of data validation class
+[ 2024-07-08 13:29:03,864 ] 32 root - INFO - Checking the existing file and validating the required file in ['data.yaml', 'README.dataset.txt', 'README.roboflow.txt', 'test', 'train', 'valid']
+[ 2024-07-08 13:29:03,869 ] 61 root - INFO - Exiting fn:initiate_data_validation of DataValidation class
+[ 2024-07-08 13:29:03,869 ] 62 root - INFO - Data validation artifact:DataValidationArtifact(validation_status=True)
+[ 2024-07-08 13:29:06,168 ] 52 root - INFO - performed the data validation operation
+[ 2024-07-08 13:29:06,168 ] 53 root - INFO - Exiting the fn:start_data_validation of TrainPipeline class

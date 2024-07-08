@@ -1,0 +1,5 @@
+[ 2024-07-07 17:38:42,200 ] 18 root - INFO - Entered the start_data_ingestion method of TrainPipeline class
+[ 2024-07-07 17:38:42,200 ] 20 root - INFO - Getting the data from URL
+[ 2024-07-07 17:38:42,200 ] 16 root - INFO - Initialising DataIngestionConfig class from config_entity.py
+[ 2024-07-07 17:38:42,201 ] 67 root - INFO - Entered initiate_data_ingestion method of Data_Ingestion class
+[ 2024-07-07 17:38:42,239 ] 34 root - INFO - Downloading data from https://drive.google.com/file/d/1dpyiJNgiC3PYOSmh9sFx4V-RUurGQeqc/view?usp=sharing into file artifacts\07_07_2024_17_38_42\data_ingestion\view?usp=sharing

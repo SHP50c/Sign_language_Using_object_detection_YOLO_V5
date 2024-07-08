@@ -1,0 +1,11 @@
+[ 2024-07-07 22:19:24,965 ] 18 root - INFO - Entered the start_data_ingestion method of TrainPipeline class
+[ 2024-07-07 22:19:24,966 ] 20 root - INFO - Getting the data from URL
+[ 2024-07-07 22:19:24,966 ] 18 root - INFO - Initialising DataIngestionConfig class from config_entity.py
+[ 2024-07-07 22:19:24,966 ] 68 root - INFO - Entered initiate_data_ingestion method of Data_Ingestion class
+[ 2024-07-07 22:19:24,968 ] 38 root - INFO - Downloading data from https://drive.google.com/file/d/1dpyiJNgiC3PYOSmh9sFx4V-RUurGQeqc/view?usp=sharing into file artifacts\07_07_2024_22_19_24\data_ingestion\1dpyiJNgiC3PYOSmh9sFx4V-RUurGQeqc.zip
+[ 2024-07-07 22:19:46,248 ] 40 root - INFO - Downloaded data from https://drive.google.com/file/d/1dpyiJNgiC3PYOSmh9sFx4V-RUurGQeqc/view?usp=sharing into filr artifacts\07_07_2024_22_19_24\data_ingestion\1dpyiJNgiC3PYOSmh9sFx4V-RUurGQeqc.zip
+[ 2024-07-07 22:19:46,248 ] 53 root - INFO - Extracting zip file: artifacts\07_07_2024_22_19_24\data_ingestion\1dpyiJNgiC3PYOSmh9sFx4V-RUurGQeqc.zip into dir: artifacts\07_07_2024_22_19_24\data_ingestion\feature_store
+[ 2024-07-07 22:20:51,540 ] 78 root - INFO - Exited initiate_data_ingestion method of Data_Ingestion class
+[ 2024-07-07 22:20:51,540 ] 79 root - INFO - Data ingestion artifact: DataIngestionArtifact(data_zip_file_path='artifacts\\07_07_2024_22_19_24\\data_ingestion\\1dpyiJNgiC3PYOSmh9sFx4V-RUurGQeqc.zip', feature_store_path='artifacts\\07_07_2024_22_19_24\\data_ingestion\\feature_store')
+[ 2024-07-07 22:20:51,541 ] 27 root - INFO - Got the data from URL
+[ 2024-07-07 22:20:51,541 ] 29 root - INFO - Exited the start_data_ingestion method of TrainPipeline class

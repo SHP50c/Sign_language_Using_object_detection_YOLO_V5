@@ -1,0 +1,10 @@
+[ 2024-07-07 21:56:19,320 ] 18 root - INFO - Entered the start_data_ingestion method of TrainPipeline class
+[ 2024-07-07 21:56:19,320 ] 20 root - INFO - Getting the data from URL
+[ 2024-07-07 21:56:19,320 ] 17 root - INFO - Initialising DataIngestionConfig class from config_entity.py
+[ 2024-07-07 21:56:19,320 ] 81 root - INFO - Entered initiate_data_ingestion method of Data_Ingestion class
+[ 2024-07-07 21:56:19,322 ] 37 root - INFO - Downloading data from https://drive.google.com/file/d/1dpyiJNgiC3PYOSmh9sFx4V-RUurGQeqc/view?usp=sharing into file artifacts\07_07_2024_21_56_19\data_ingestion\1dpyiJNgiC3PYOSmh9sFx4V-RUurGQeqc.zip
+[ 2024-07-07 21:56:44,303 ] 39 root - INFO - Downloaded data from https://drive.google.com/file/d/1dpyiJNgiC3PYOSmh9sFx4V-RUurGQeqc/view?usp=sharing into filr artifacts\07_07_2024_21_56_19\data_ingestion\1dpyiJNgiC3PYOSmh9sFx4V-RUurGQeqc.zip
+[ 2024-07-07 21:56:44,304 ] 52 root - INFO - Extracting zip file: artifacts\07_07_2024_21_56_19\data_ingestion\1dpyiJNgiC3PYOSmh9sFx4V-RUurGQeqc.zip into dir: artifacts\07_07_2024_21_56_19\data_ingestion\feature_store
+[ 2024-07-07 21:56:44,800 ] 71 root - INFO - Extracted README.dataset.txt to artifacts\07_07_2024_21_56_19\data_ingestion\feature_store\README.dataset.txt
+[ 2024-07-07 21:56:44,801 ] 71 root - INFO - Extracted README.roboflow.txt to artifacts\07_07_2024_21_56_19\data_ingestion\feature_store\README.roboflow.txt
+[ 2024-07-07 21:56:44,803 ] 71 root - INFO - Extracted data.yaml to artifacts\07_07_2024_21_56_19\data_ingestion\feature_store\data.yaml

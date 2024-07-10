@@ -1,0 +1,22 @@
+[ 2024-07-09 14:18:14,815 ] 26 root - INFO - Entered the start_data_ingestion method of TrainPipeline class
+[ 2024-07-09 14:18:14,815 ] 27 root - INFO - Getting the data from URL
+[ 2024-07-09 14:18:14,815 ] 18 root - INFO - Initialising DataIngestionConfig class from config_entity.py
+[ 2024-07-09 14:18:14,816 ] 71 root - INFO - Entered initiate_data_ingestion method of Data_Ingestion class
+[ 2024-07-09 14:18:14,816 ] 31 root - INFO - Entered fn: download_data of class DataIngestion
+[ 2024-07-09 14:18:14,817 ] 40 root - INFO - Downloading data from https://drive.google.com/file/d/1dpyiJNgiC3PYOSmh9sFx4V-RUurGQeqc/view?usp=sharing into file artifacts\07_09_2024_14_18_14\data_ingestion\1dpyiJNgiC3PYOSmh9sFx4V-RUurGQeqc.zip
+[ 2024-07-09 14:18:38,134 ] 42 root - INFO - Downloaded data from https://drive.google.com/file/d/1dpyiJNgiC3PYOSmh9sFx4V-RUurGQeqc/view?usp=sharing into filr artifacts\07_09_2024_14_18_14\data_ingestion\1dpyiJNgiC3PYOSmh9sFx4V-RUurGQeqc.zip
+[ 2024-07-09 14:18:38,134 ] 56 root - INFO - Extracting zip file: artifacts\07_09_2024_14_18_14\data_ingestion\1dpyiJNgiC3PYOSmh9sFx4V-RUurGQeqc.zip into dir: artifacts\07_09_2024_14_18_14\data_ingestion\feature_store
+[ 2024-07-09 14:19:51,667 ] 81 root - INFO - Exited initiate_data_ingestion method of Data_Ingestion class
+[ 2024-07-09 14:19:51,667 ] 82 root - INFO - Data ingestion artifact: DataIngestionArtifact(data_zip_file_path='artifacts\\07_09_2024_14_18_14\\data_ingestion\\1dpyiJNgiC3PYOSmh9sFx4V-RUurGQeqc.zip', feature_store_path='artifacts\\07_09_2024_14_18_14\\data_ingestion\\feature_store')
+[ 2024-07-09 14:19:51,667 ] 34 root - INFO - Got the data from URL
+[ 2024-07-09 14:19:51,667 ] 35 root - INFO - Exited the start_data_ingestion method of TrainPipeline class
+[ 2024-07-09 14:19:51,667 ] 47 root - INFO - Entered the fn:start_data_validation of TrainPipeline class
+[ 2024-07-09 14:19:51,668 ] 55 root - INFO - Entered fn:initiate_data_validation of data validation class
+[ 2024-07-09 14:19:51,668 ] 32 root - INFO - Checking the existing file and validating the required file in artifacts\07_09_2024_14_18_14\data_ingestion\feature_store
+[ 2024-07-09 14:19:51,673 ] 61 root - INFO - Exiting fn:initiate_data_validation of DataValidation class
+[ 2024-07-09 14:19:51,674 ] 62 root - INFO - Data validation artifact:DataValidationArtifact(validation_status=True)
+[ 2024-07-09 14:19:56,907 ] 56 root - INFO - performed the data validation operation
+[ 2024-07-09 14:19:56,907 ] 57 root - INFO - Exiting the fn:start_data_validation of TrainPipeline class
+[ 2024-07-09 14:19:56,907 ] 19 root - INFO - Entered fn:initiate_model_trainer of ModelTrainer class
+[ 2024-07-09 14:19:56,907 ] 21 root - INFO - Unziping data
+[ 2024-07-09 14:19:57,133 ] 60 root - INFO - Exception occured in fn:initiate_model_trainer of ModelTrainer class

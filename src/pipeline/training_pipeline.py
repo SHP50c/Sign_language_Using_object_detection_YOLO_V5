@@ -3,11 +3,14 @@ from src.exception import CustomException
 from src.logger import logging
 from src.components.data_ingestion import DataIngestion
 from src.components.data_validation import DataValidation
+from src.components.model_trainer import ModelTrainer
 
 from src.entity.config_entity import (DataIngestionConfig,
-                                      DataValidationConfig)
+                                      DataValidationConfig,
+                                      ModelTrainerConfig)
 from src.entity.artifacts_entity import (DataIngestionArtifact,
-                                         DataValidationArtifact)
+                                         DataValidationArtifact,
+                                         ModelTrainerArtifact)
 
 
 
@@ -15,6 +18,7 @@ class TrainPipeline:
     def __init__(self):
         self.data_ingestion_config = DataIngestionConfig()
         self.data_validation_config = DataValidationConfig()
+        self.model_trainer_config = ModelTrainerConfig()
 
 
     def start_data_ingestion(self)-> DataIngestionArtifact:
@@ -56,6 +60,16 @@ class TrainPipeline:
         except CustomException as e:
             logging.info("Exception occured in fn:start_data_validation of Trainpipelin class file:training_pipeline.py")
             raise CustomException(e,sys)
+        
+
+
+    def start_model_trainer(self)->ModelTrainerArtifact:
+        try:
+            model_Trainer = ModelTrainer(model_trainer_config = self.model_trainer_config)
+            model_Trainer_artifact = model_Trainer.initiate_model_trainer()
+            return model_Trainer_artifact
+        except Exception as e:
+            raise CustomException(e,sys)
 
 
 
@@ -63,6 +77,10 @@ class TrainPipeline:
         try:
             data_ingestion_artifact = self.start_data_ingestion()
             data_validation_artifact = self.start_data_validation(data_ingestion_artifact=data_ingestion_artifact)
+            if data_validation_artifact.validation_status == True:
+                model_trainer_artifact = self.start_model_trainer()
+            else:
+                raise Exception("Your data is not in correct format")
 
         except Exception as e:
             raise CustomException(e,sys)

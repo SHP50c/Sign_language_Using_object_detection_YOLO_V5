@@ -1,0 +1,24 @@
+[ 2024-07-09 20:49:22,993 ] 26 root - INFO - Entered the start_data_ingestion method of TrainPipeline class
+[ 2024-07-09 20:49:22,994 ] 27 root - INFO - Getting the data from URL
+[ 2024-07-09 20:49:22,994 ] 18 root - INFO - Initialising DataIngestionConfig class from config_entity.py
+[ 2024-07-09 20:49:22,994 ] 71 root - INFO - Entered initiate_data_ingestion method of Data_Ingestion class
+[ 2024-07-09 20:49:22,994 ] 31 root - INFO - Entered fn: download_data of class DataIngestion
+[ 2024-07-09 20:49:22,995 ] 40 root - INFO - Downloading data from https://drive.google.com/file/d/1dpyiJNgiC3PYOSmh9sFx4V-RUurGQeqc/view?usp=sharing into file artifacts\07_09_2024_20_49_22\data_ingestion\1dpyiJNgiC3PYOSmh9sFx4V-RUurGQeqc.zip
+[ 2024-07-09 20:51:48,924 ] 42 root - INFO - Downloaded data from https://drive.google.com/file/d/1dpyiJNgiC3PYOSmh9sFx4V-RUurGQeqc/view?usp=sharing into filr artifacts\07_09_2024_20_49_22\data_ingestion\1dpyiJNgiC3PYOSmh9sFx4V-RUurGQeqc.zip
+[ 2024-07-09 20:51:48,925 ] 56 root - INFO - Extracting zip file: artifacts\07_09_2024_20_49_22\data_ingestion\1dpyiJNgiC3PYOSmh9sFx4V-RUurGQeqc.zip into dir: artifacts\07_09_2024_20_49_22\data_ingestion\feature_store
+[ 2024-07-09 20:52:50,361 ] 81 root - INFO - Exited initiate_data_ingestion method of Data_Ingestion class
+[ 2024-07-09 20:52:50,362 ] 82 root - INFO - Data ingestion artifact: DataIngestionArtifact(data_zip_file_path='artifacts\\07_09_2024_20_49_22\\data_ingestion\\1dpyiJNgiC3PYOSmh9sFx4V-RUurGQeqc.zip', feature_store_path='artifacts\\07_09_2024_20_49_22\\data_ingestion\\feature_store')
+[ 2024-07-09 20:52:50,362 ] 34 root - INFO - Got the data from URL
+[ 2024-07-09 20:52:50,362 ] 35 root - INFO - Exited the start_data_ingestion method of TrainPipeline class
+[ 2024-07-09 20:52:50,362 ] 47 root - INFO - Entered the fn:start_data_validation of TrainPipeline class
+[ 2024-07-09 20:52:50,362 ] 55 root - INFO - Entered fn:initiate_data_validation of data validation class
+[ 2024-07-09 20:52:50,363 ] 32 root - INFO - Checking the existing file and validating the required file in artifacts\07_09_2024_20_49_22\data_ingestion\feature_store
+[ 2024-07-09 20:52:50,367 ] 61 root - INFO - Exiting fn:initiate_data_validation of DataValidation class
+[ 2024-07-09 20:52:50,368 ] 62 root - INFO - Data validation artifact:DataValidationArtifact(validation_status=True)
+[ 2024-07-09 20:52:57,856 ] 56 root - INFO - performed the data validation operation
+[ 2024-07-09 20:52:57,856 ] 57 root - INFO - Exiting the fn:start_data_validation of TrainPipeline class
+[ 2024-07-09 20:52:57,856 ] 19 root - INFO - Entered fn:initiate_model_trainer of ModelTrainer class
+[ 2024-07-09 20:52:57,856 ] 21 root - INFO - Unziping data
+[ 2024-07-09 21:02:51,918 ] 13 root - INFO - Read yaml file successfully
+[ 2024-07-09 21:04:55,966 ] 55 root - INFO - Exiting fn:initiate_model_trainer of model trainer class
+[ 2024-07-09 21:04:55,966 ] 56 root - INFO - Model trainer artifacts: ModelTrainerArtifact(trained_model_file_path='yolov5/best.pt')

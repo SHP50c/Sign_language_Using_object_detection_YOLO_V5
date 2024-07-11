@@ -55,5 +55,6 @@ thop>=0.1.1  # FLOPs computation
 # roboflow
 gdown
 aspose-zip
+keyboard
 
 -e .

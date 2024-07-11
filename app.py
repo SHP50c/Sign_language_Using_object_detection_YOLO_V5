@@ -1,5 +1,7 @@
 import os
 import sys
+import keyboard
+import threading
 from src.pipeline.training_pipeline import TrainPipeline
 from src.exception import CustomException
 from src.utils import decodeImage, encodeImageIntoBase64
@@ -66,9 +68,21 @@ def predictLive():
     except ValueError as val:
         print(val)
         return Response("Value not found inside  json data")
+    
+
+
+def check_key_press():
+    while True:
+        if keyboard.is_pressed('q'):
+            os.system("rm -rf yolov5/runs")
+            os._exit(0)
+
 
 
 
 if __name__ == "__main__":
     clApp = ClientApp()
+    key_thread = threading.Thread(target=check_key_press)
+    key_thread.daemon = True
+    key_thread.start()
     app.run(host="0.0.0.0", port=8080)

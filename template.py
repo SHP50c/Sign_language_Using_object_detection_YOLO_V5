@@ -28,7 +28,7 @@ list_of_files = [
     f"{source}/pipeline/__init__.py",
     f"{source}/pipeline/training_pipeline.py",
     f"{source}/utils.py",
-    "template/index.html",
+    "templates/index.html",
     ".dockerignore",
     "app.py",
     "Dockerfile",

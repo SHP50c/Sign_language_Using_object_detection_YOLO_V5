@@ -1,0 +1,7 @@
+[ 2024-07-11 09:55:33,108 ] 97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.9.181:8080
+[ 2024-07-11 09:55:33,109 ] 97 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[ 2024-07-11 10:02:26,515 ] 97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 10:02:26] "GET /predict HTTP/1.1" 200 -
+[ 2024-07-11 10:03:00,471 ] 97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 10:03:00] "GET /predict HTTP/1.1" 200 -

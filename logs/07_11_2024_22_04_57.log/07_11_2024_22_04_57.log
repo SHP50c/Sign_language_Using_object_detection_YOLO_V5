@@ -1,0 +1,10 @@
+[ 2024-07-11 22:05:04,518 ] 97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.9.181:8080
+[ 2024-07-11 22:05:04,533 ] 97 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[ 2024-07-11 22:05:08,438 ] 97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 22:05:08] "GET / HTTP/1.1" 200 -
+[ 2024-07-11 22:05:55,162 ] 97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 22:05:55] "GET / HTTP/1.1" 200 -
+[ 2024-07-11 22:05:57,675 ] 97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 22:05:57] "GET / HTTP/1.1" 200 -
+[ 2024-07-11 22:06:07,949 ] 97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 22:06:07] "GET / HTTP/1.1" 200 -
+[ 2024-07-11 22:06:47,500 ] 97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 22:06:47] "GET /live HTTP/1.1" 200 -

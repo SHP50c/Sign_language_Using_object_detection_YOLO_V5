@@ -63,12 +63,12 @@ def predictLive():
     try:
         os.system("cd yolov5/ && python detect.py --weights best.pt --img 640 --conf 0.5 --source 0")
         os.system("rm -rf yolov5/runs")
-        return "Camera starting!!" 
+        return "Camera starting!!"
 
     except ValueError as val:
         print(val)
         return Response("Value not found inside  json data")
-    
+
 
 
 def check_key_press():

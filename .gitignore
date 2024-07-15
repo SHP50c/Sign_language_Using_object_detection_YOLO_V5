@@ -163,4 +163,4 @@ CollectedImages/
 artifacts/
 *.zip
 #yolov5/
-*.jpg
+#*.jpg

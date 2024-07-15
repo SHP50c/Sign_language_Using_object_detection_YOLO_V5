@@ -162,4 +162,5 @@ cython_debug/
 CollectedImages/
 artifacts/
 *.zip
-yolov5/
+#yolov5/
+*.jpg

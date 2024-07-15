@@ -96,7 +96,17 @@ In this Project, we aim to predict 7 signs by individuals with speech impairment
 - you can go through the runtime logs in the `logs` folder for better understanding of the processes.
 
 ## Glimpses
-attached below are few of the predicted images by the model.
+Attached below are few of the snapshots taken during anotation proccess in roboflow.
+![alt text](Roboflow_anotation_begin.jpg)
+![alt text](Hello_anotation.jpg)
+![alt text](I_Love_You_annotation.jpg)
+![alt text](Namaste_Annotation.jpg)
+![alt text](No_annotation.jpg)
+![alt text](Please_annotation.jpg)
+![alt text](Thank_you_annotation.jpg)
+![alt text](Yes_annotation.jpg)
+
+I have also Attached below are few of the predicted images by the model.
 
 ![alt text](Hello-1c7dd966-36d0-11ef-86c2-1c3e84e4a974_jpg.rf.04739ff9e99d95fb4f1e68f38a1f133e.jpg)
 ![alt text](I-love-You-0be1c51e-36e1-11ef-9112-1c3e84e4a974_jpg.rf.697b68e676e171cbc15c850a149595e6.jpg)
